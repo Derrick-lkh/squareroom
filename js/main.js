@@ -23,6 +23,8 @@ $(document).ready(function() {
         );
     }
   );
+  
+  toggleNav($(window).scrollTop());
 });
 
 $(window).scroll(function(event) {
