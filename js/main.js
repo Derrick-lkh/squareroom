@@ -42,6 +42,7 @@ function toggleNav(scroll) {
     $(".nav-links li").css({
       color: "black"
     });
+    $(".logo-container img").attr("src", "./images/logo.png");
   } else {
     $(".nav").css({
       background: "none"
@@ -54,5 +55,6 @@ function toggleNav(scroll) {
       width: "180px",
       height: "80px"
     });
+    $(".logo-container img").attr("src", "./images/logo-white.png");
   }
 }
