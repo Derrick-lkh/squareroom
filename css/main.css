@@ -127,6 +127,11 @@
 .content .side-img img {
   width: 150%;
 }
+@media (max-width: 768px) {
+  .content .side-img img {
+    width: 100%;
+  }
+}
 .content .home-gallery img {
   width: 100%;
 }
