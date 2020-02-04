@@ -5,30 +5,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Squareroom Interior Design</title>
+    <title>Square Room - We are innovative architects</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <div class="nav">
-        <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="logo-container">
-                <img src="./images/logo.png" />
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li class="active">HOME</li>
-                    <li>
-                        GALLERY
-                    </li>
-                    <li>PROMOTIONS</li>
-                    <li>CONTACT US</li>
-                </ul>
+    <header>
+        <div class="nav">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="logo-container">
+                    <img src="./images/logo.png" />
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li>
+                            <a class="animate-link" href="gallery.html">GALLERY<span class="Navunderline"></span></a>
+                        </li>
+                        <li>
+                            <a class="animate-link" href="gallery.html">PROMOTIONS<span class="Navunderline"></span></a>
+                        </li>
+                        <li>
+                            <a class="animate-link" href="gallery.html">CONTACT US<span class="Navunderline"></span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
     <div class="banner">
         <img src="./images/banner.png" />
         <div class="overlay text-center">
@@ -37,7 +48,7 @@
     </div>
 
     <div class="content pt-5 d-flex flex-wrap container">
-        <div class="why-us col-12 col-md-7 pr-5">
+        <div class="why-us col-12 col-md-7 pr-md-5">
             <div class="">
                 <h2>Why Us?</h2>
                 <h3>Over <b>10</b> Years of experience</h3>
@@ -59,7 +70,7 @@
             <img src="./images/cards.png" />
         </div>
 
-        <div class="why-us col-12 col-md-6 pl-5">
+        <div class="why-us col-12 col-md-6 pl-md-5">
             <div class="">
                 <h2>Turning houses into dream homes</h2>
 
@@ -72,7 +83,7 @@
                     condo, landed property, DBSS or HDB – call us!
                 </p>
                 <div class="more-container">
-                    <a class="animate-link" href="#">VIEW GALLERY<span class="underline"></span></a>
+                    <a class="animate-link" href="gallery.html">VIEW GALLERY<span class="underline"></span></a>
                 </div>
             </div>
         </div>
@@ -129,5 +140,12 @@
 <script src="./js/all.min.js" type="text/javascript"></script>
 <script src="./js/jquery.min.js" type="text/javascript"></script>
 <script src="./js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+    toggleNav($(window).scrollTop());
+    $(window).scroll(function(event) {
+        var scroll = $(window).scrollTop();
+        toggleNav(scroll);
+    });
+</script>
 
 </html>

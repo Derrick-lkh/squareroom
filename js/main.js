@@ -1,6 +1,27 @@
 $(document).ready(function() {
   console.log("ready");
 
+  // Nav links animation
+  $(".animate-link").hover(
+    function() {
+      $(this)
+        .find(".Navunderline")
+        .show()
+        .animate(
+          {
+            width: "100%"
+          },
+          200
+        );
+    },
+    function() {
+      $(this)
+        .find(".Navunderline")
+        .removeAttr("style")
+        .hide();
+    }
+  );
+
   $(".animate-link").hover(
     function() {
       $(this)
@@ -23,13 +44,59 @@ $(document).ready(function() {
         );
     }
   );
-  
-  toggleNav($(window).scrollTop());
-});
 
-$(window).scroll(function(event) {
-  var scroll = $(window).scrollTop();
-  toggleNav(scroll);
+  var headerOffset = $(".nav").height();
+  $(".gallery-banner").css({
+    "padding-top": headerOffset + 100 + "px"
+  });
+  console.log(headerOffset);
+
+  if ($(window).width() > 768) {
+    $(".gallery-item").hover(
+      function() {
+        $(this)
+          .find("img")
+          .css({
+            filter: "grayscale(0%)"
+          })
+          .parent()
+          .find(".gallery-overlay")
+          .css({
+            display: "flex"
+          });
+      },
+      function() {
+        $(this)
+          .find("img")
+          .css({
+            filter: "grayscale(100%)"
+          })
+          .parent()
+          .find(".gallery-overlay")
+          .css({
+            display: "none"
+          });
+      }
+    );
+  }
+
+  $(".gallery-item").magnificPopup({
+    items: [
+      {
+        src: "./images/gallery-1.png"
+      },
+      {
+        src: "./images/gallery-3.png"
+      },
+      {
+        src: "./images/gallery-2.png"
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: "image" // this is default type
+  });
 });
 
 function toggleNav(scroll) {
@@ -41,15 +108,15 @@ function toggleNav(scroll) {
       width: "90px",
       height: "40px"
     });
-    $(".nav-links li").css({
-      color: "black"
+    $(".nav-links li a").css({
+      color: "#767676"
     });
     $(".logo-container img").attr("src", "./images/logo.png");
   } else {
     $(".nav").css({
       background: "none"
     });
-    $(".nav-links li").css({
+    $(".nav-links li a").css({
       color: "white"
     });
 
@@ -58,5 +125,32 @@ function toggleNav(scroll) {
       height: "80px"
     });
     $(".logo-container img").attr("src", "./images/logo-white.png");
+  }
+}
+
+function toggleNavBlack(scroll) {
+  if (scroll > 1) {
+    $(".nav").css({
+      background: "white"
+    });
+    $(".logo-container img").css({
+      width: "90px",
+      height: "40px"
+    });
+    $(".nav-links li a").css({
+      color: "#767676"
+    });
+  } else {
+    $(".nav").css({
+      background: "none"
+    });
+    $(".nav-links li a").css({
+      color: "#767676"
+    });
+
+    $(".logo-container img").css({
+      width: "180px",
+      height: "80px"
+    });
   }
 }
