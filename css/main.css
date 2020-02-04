@@ -26,6 +26,73 @@
   width: 180px;
   height: 80px;
 }
+.nav .fake-div {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav .fake-div {
+    display: inline;
+    display: initial;
+  }
+}
+.nav .navbar-toggler {
+  outline: none;
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav .navbar-toggler {
+    display: inline;
+    display: initial;
+  }
+}
+.nav .nav-slide {
+  background: white;
+  width: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav .nav-slide {
+    display: none;
+  }
+}
+.nav .nav-slide ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+.nav .nav-slide ul li {
+  padding-top: 1rem;
+  position: relative;
+  font-family: "Avenir LT Std";
+  font-weight: 400;
+  font-style: normal;
+}
+.nav .nav-slide ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 0.25rem 0;
+}
+.nav .nav-slide ul li a .Navunderline {
+  display: none;
+  content: "<span></span>";
+  height: 1.5px;
+  width: 0;
+  background: #f68d1f;
+  border: 1px solid #f68d1f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav .nav-slide ul .active::after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  border: 1px solid #f68d1f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 .nav .nav-links {
   display: -webkit-box;
   display: flex;

@@ -80,23 +80,10 @@ $(document).ready(function() {
     );
   }
 
-  $(".gallery-item").magnificPopup({
-    items: [
-      {
-        src: "./images/gallery-1.png"
-      },
-      {
-        src: "./images/gallery-3.png"
-      },
-      {
-        src: "./images/gallery-2.png"
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: "image" // this is default type
-  });
+  // $(".navbar-toggler").on("click", function() {
+  //   console.log("clicked");
+  //   $(".nav-slide").slideToggle();
+  // });
 });
 
 function toggleNav(scroll) {
