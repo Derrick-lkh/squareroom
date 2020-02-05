@@ -544,10 +544,10 @@ footer {
 }
 .package-nav .slick-dots {
   margin: 0 auto;
-}
-.package-nav .slick-dots ul {
   width: 50%;
-  left: 25%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  left: 0;
 }
 .package-nav .slick-dots li button:before {
   font-size: 2rem;
