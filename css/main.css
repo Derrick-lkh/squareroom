@@ -263,8 +263,10 @@ footer {
   width: 100%;
 }
 @media (max-width: 768px) {
-   width: 50%;
-   padding: 1rem 0.5rem 1rem 0;
+  .footer .footer-item {
+    width: 50%;
+    padding: 1rem 0.5rem 1rem 0;
+  }
 }
 .footer .footer-item p {
   font-family: "Avenir LT Std";
