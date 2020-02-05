@@ -49,6 +49,10 @@ $(document).ready(function() {
   $(".gallery-banner").css({
     "padding-top": headerOffset + 100 + "px"
   });
+  $(".package-nav").css({
+    "padding-top": headerOffset + 100 + "px"
+  });
+
   console.log(headerOffset);
 
   if ($(window).width() > 768) {
@@ -79,11 +83,6 @@ $(document).ready(function() {
       }
     );
   }
-
-  // $(".navbar-toggler").on("click", function() {
-  //   console.log("clicked");
-  //   $(".nav-slide").slideToggle();
-  // });
 });
 
 function toggleNav(scroll) {

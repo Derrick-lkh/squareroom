@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Avenir LT Std";
   src: url("./fonts/AvenirLTStd-Roman.woff2") format("woff2"), url("./fonts/AvenirLTStd-Roman.woff") format("woff");
@@ -491,4 +492,144 @@ footer {
   grid-column-end: 21;
   grid-row-start: 15;
   grid-row-end: 16;
+}
+.package-nav .package-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.package-nav .package-item.slick-active {
+  border: 1px solid #f68d1f;
+  border-radius: 1rem;
+}
+.package-nav .package-item.slick-active h3 {
+  color: #f68d1f;
+}
+.package-nav .package-item h3 {
+  font-family: "Avenir LT Std";
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  color: #8b8b8b;
+  height: 5rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  padding: 1rem 0;
+}
+.package-nav .package-item .package-price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.package-nav .package-item .package-price li {
+  font-family: "Avenir LT Std";
+  font-weight: normal;
+  font-style: normal;
+  color: #575757;
+  font-size: 1rem;
+}
+.package-nav .active {
+  border: 1px solid #f68d1f;
+  border-radius: 1rem;
+}
+.package-nav .active h3 {
+  color: #f68d1f;
+}
+.package-nav .slick-dots {
+  margin: 0 auto;
+}
+.package-nav .slick-dots ul {
+  width: 50%;
+  left: 25%;
+}
+.package-nav .slick-dots li button:before {
+  font-size: 2rem;
+  top: 10px;
+  color: #5e5e5e;
+}
+.package-nav .slick-dots li.slick-active button:before {
+  color: #f68d1f;
+}
+.package-content {
+  margin-top: 5rem;
+}
+.package-content .package-group {
+  display: none;
+}
+.package-content #package-1 {
+  display: -webkit-box;
+  display: flex;
+}
+.package-content .item {
+  margin: 1rem 0;
+}
+.package-content .item h4 {
+  font-family: "Avenir LT Std";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #575757;
+  letter-spacing: 0.05rem;
+}
+.package-content .item ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 0.5rem;
+}
+.package-content .item ul li {
+  position: relative;
+  font-family: "Avenir LT Std";
+  font-weight: normal;
+  font-style: normal;
+  padding: 0.25rem 0;
+  font-size: 1rem;
+  color: #575757;
+  padding-left: 2rem;
+}
+.package-content .item .demolition li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.package-content .item .plumbing li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.package-content .item .promo li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.package-content .item .misc li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.package-content .item .masonry li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
 }
