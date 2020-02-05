@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  console.log("ready");
-
   // Nav links animation
   $(".animate-link").hover(
     function() {
@@ -52,8 +50,6 @@ $(document).ready(function() {
   $(".package-nav").css({
     "padding-top": headerOffset + 100 + "px"
   });
-
-  console.log(headerOffset);
 
   if ($(window).width() > 768) {
     $(".gallery-item").hover(

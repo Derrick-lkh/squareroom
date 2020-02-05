@@ -633,3 +633,27 @@ footer {
   font-weight: 900;
   content: "";
 }
+.package-content .item .ceiling li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.package-content .item .carpentry li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+.package-content .item .aluminium li::after {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
