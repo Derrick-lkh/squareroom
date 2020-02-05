@@ -175,16 +175,17 @@
     });
 
     $(".navbar-toggler").on("click", function() {
-        $(".nav-slide").slideToggle(250, function() {
-            if (openSlide == false) {
-                toggleNav(2);
-                openSlide = true;
-            } else {
-                var scroll = $(window).scrollTop();
+        if (openSlide == false) {
+            toggleNav(2);
+            $(".nav-slide").slideToggle(250, function() {});
+            openSlide = true;
+        } else {
+            var scroll = $(window).scrollTop();
+            $(".nav-slide").slideToggle(250, function() {
                 toggleNav(scroll);
                 openSlide = false;
-            }
-        });
+            });
+        }
     });
 </script>
 
