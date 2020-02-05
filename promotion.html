@@ -113,6 +113,13 @@
         </div>
     </div>
 
+    <div class="package-name container">
+        <div class="col d-flex inner-container">
+            <div class="package-selection">
+                <b id="current-package">RESALE FLAT</b>
+            </div>
+        </div>
+    </div>
     <div class="package-content container" id="content-holder">
         <div id="package-1" class="package-group flex-wrap">
             <div class="item col-12 col-md-6">
@@ -508,12 +515,24 @@
         var current = $(this);
         if (current.hasClass("package-1")) {
             currentPackage = "package-1";
+            $("#current-package").text(function() {
+                return "RESALE FLAT";
+            });
         } else if (current.hasClass("package-2")) {
             currentPackage = "package-2";
+            $("#current-package").text(function() {
+                return "NEW STANDARD FLATS";
+            });
         } else if (current.hasClass("package-3")) {
             currentPackage = "package-3";
+            $("#current-package").text(function() {
+                return "PREMIUM DESIGN & BUILD";
+            });
         } else if (current.hasClass("package-4")) {
             currentPackage = "package-4";
+            $("#current-package").text(function() {
+                return "RESALE FLATS KITCHEN & 2 BATHROOMS";
+            });
         }
         $(".package-group").hide();
         $(".package-content")

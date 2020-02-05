@@ -562,8 +562,32 @@ footer {
   color: #f68d1f;
   opacity: 1;
 }
-.package-content {
+.package-name {
   margin-top: 5rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  .package-name {
+    display: block;
+  }
+}
+.package-name .inner-container {
+  border-bottom: 1px solid #cfcfcf;
+  padding: 0.5rem 0;
+}
+.package-name .package-selection {
+  padding-left: 0.5rem;
+}
+.package-name .package-selection b {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #f68d1f;
+  line-height: 0;
+}
+@media (min-width: 768px) {
+  .package-content {
+    margin-top: 5rem;
+  }
 }
 .package-content .package-group {
   display: none;
