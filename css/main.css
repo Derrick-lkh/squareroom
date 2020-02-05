@@ -554,8 +554,13 @@ footer {
   top: 10px;
   color: #5e5e5e;
 }
+.package-nav .slick-dots li button:hover:before {
+  color: #5e5e5e;
+  opacity: 0.25;
+}
 .package-nav .slick-dots li.slick-active button:before {
   color: #f68d1f;
+  opacity: 1;
 }
 .package-content {
   margin-top: 5rem;
