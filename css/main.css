@@ -166,6 +166,11 @@
           align-items: center;
   background: rgba(85, 85, 85, 0.15);
 }
+@media (max-width: 768px) {
+  .banner .overlay {
+    padding-top: 5rem;
+  }
+}
 .banner .overlay h1 {
   color: white;
   font-family: "Avenir LT Std";
@@ -273,6 +278,7 @@ footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  word-break: break-all;
 }
 .footer .footer-item ul li {
   font-family: "Avenir LT Std";
@@ -280,6 +286,9 @@ footer {
   font-style: normal;
   color: #575757;
   padding: 0.2rem 0;
+}
+.footer .footer-item .footer-links {
+  color: #f68d1f;
 }
 .gallery-banner {
   padding-bottom: 2rem;
