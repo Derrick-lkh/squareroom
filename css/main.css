@@ -695,3 +695,112 @@ footer {
   font-weight: 900;
   content: "";
 }
+.contact .background-cover {
+  background-image: url("../images/contact-bg.png");
+  background-size: 100% 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+.contact .contact-container h2 {
+  font-family: "Avenir LT Std";
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.contact .contact-container h2 br {
+  display: none;
+}
+@media (max-width: 768px) {
+  .contact .contact-container h2 br {
+    display: inline;
+  }
+}
+.contact .contact-container p {
+  font-family: "Avenir LT Std";
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: black;
+}
+.contact .contact-container p a {
+  color: black;
+}
+.contact .contact-container p a:hover {
+  color: #f68d1f;
+  text-decoration: none;
+}
+.contact .contact-container .country {
+  letter-spacing: 0.2rem;
+}
+@media (max-width: 768px) {
+  .contact .contact-container .dot {
+    display: none;
+  }
+}
+.contact .contact-container .form-container {
+  height: 100%;
+}
+.contact .contact-container .form-container .image {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+@media (max-width: 768px) {
+  .contact .contact-container .form-container .image {
+    display: none;
+  }
+}
+.contact .contact-container .form-container .image img {
+  width: 60%;
+}
+.contact .contact-container .form {
+  padding: 3rem 0;
+}
+.contact .contact-container .form .form-group {
+  width: 100%;
+}
+.contact .contact-container .form .form-group input {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.contact .contact-container .form .form-group input:focus {
+  outline: none;
+}
+.contact .contact-container .form .form-group textarea {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.15);
+  resize: none;
+}
+.contact .contact-container .form .form-group textarea:focus {
+  outline: none;
+}
+.contact .contact-container .form .form-group button {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border: none;
+  background: #f68d1f;
+  color: white;
+  font-family: "Avenir LT Std";
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.3rem;
+}
+.contact .contact-container .form .form-group button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}

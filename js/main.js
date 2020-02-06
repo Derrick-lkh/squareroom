@@ -50,6 +50,9 @@ $(document).ready(function() {
   $(".package-nav").css({
     "padding-top": headerOffset + 100 + "px"
   });
+  $(".contact").css({
+    "padding-top": headerOffset + 100 + "px"
+  });
 
   if ($(window).width() > 768) {
     $(".gallery-item").hover(
